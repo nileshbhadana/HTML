@@ -1,0 +1,29 @@
+*{
+    background-color: lightblue;
+}
+body{
+    font-size: 25px;
+    font-family: Bradley Hand ITC;
+}
+h1,h2,h3,h4,h5,h6{
+    color: blue;
+    font-size: 35px;
+    font-family: Constantia;
+}
+table{
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+th{
+    font-family: Arial Bold;
+}
+.tables{
+    border: 1px solid red;
+    margin: 10px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    align: right;
+}
