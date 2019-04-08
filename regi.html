@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+div{
+	width: 350px;
+	font-size:25px;
+	border:1px solid black;
+	background-color: #DDD7D6;
+	margin: 50px;
+	padding: 10px;
+    bor	
+}
+</style>
+<script type="text/javascript">
+function samepass(){
+var a=document.getElementById("passwrd").value;
+var b=document.getElementById("passwrdcon").value;
+alert(a);
+alert(b);
+if (a==b)
+{
+	return true;
+}
+else
+{
+	alert("Password do not match");
+	return false;
+}
+}
+</script>
+</head>
+<body align=center>
+<div name='divform' align=center>
+<form id="loginform" action="insert.php" method="post" onsubmit=" return samepass();">
+<table>
+<tr>
+<td>First Name:
+<td><input type="text" name="fname" placeholder='John'>
+</tr>
+<tr>
+<td>Last Name:
+<td><input type="text" name="lname" placeholder='Wick'>
+</tr>
+<tr>
+<td>Email:
+<td><input type="email" name="email" placeholder='john@gmail.com'>
+</tr>
+<tr>
+<td>Mobile Number:
+<td><input type="phone" name="m_no" placeholder='7894561320'>
+</tr>
+<tr>
+<td>Username:
+<td><input type="text" name="username" placeholder='john_wick'>
+</tr>
+<tr>
+<td>Password:
+<td><input type="password" name="passwd" id="passwrd" placeholder='Password'>
+</tr>
+<tr>
+<td>Confirm Password:
+<td><input type="password" name="passwdcon" id="passwrdcon" placeholder='Password'>
+</tr>
+</table>
+<br>
+<input type="submit" name="signup" value="SignUp" >
+</form>
+</div>
+</body>
+</html>
