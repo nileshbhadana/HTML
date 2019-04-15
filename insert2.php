@@ -1,3 +1,8 @@
+<html>
+<head>
+<title> Inserting data into test database</title>
+</head>
+<body>
 <?php
 if (isset($_POST['add']))
 {
@@ -23,3 +28,13 @@ if(!$retval)
 echo($retval." Records Added");
 }
 ?>
+<form id="loginform" method="post">
+
+Book Title: <input type="text" name="booknamef" placeholder='Book Title'>
+Book Author: <input type="text" name="bookauthorf" placeholder='Book Author'>
+Submission Date: <input type="text" name="submissiondatef" placeholder='Submission Date'>
+<br>
+<input type="submit" name="add" value="Add">
+</form>
+</body>
+</html>
